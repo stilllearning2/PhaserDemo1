@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Making your first Phaser 3 Game - Part 1</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+    <script>game1.js</script>
+    <script>game1Outcome.js</script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=gameContainer></div>
+
+    <script type="text/javascript">
+
+        var GameName = {}
+
+        var config = {
+            type: Phaser.AUTO,
+            width: 800,
+            height: 600,
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 300 },
+                    debug: false
+                }
+            },
+            scene: {
+                preload,
+                game1,
+                game1Outcome
+            }
+        };
+
+        var game = new Phaser.Game(config);
+
+        GameName.preload = function (game) { }
+
+        function preload() //----------------------------------------------------
+        {
+            this.load.image('sky', 'assets/sky.png');
+            this.load.image('ground', 'assets/platform.png');
+            this.load.image('star', 'assets/star.png');
+            this.load.image('bomb', 'assets/bomb.png');
+            this.load.spritesheet('dude',
+                'assets/dude.png',
+                { frameWidth: 32, frameHeight: 48 }
+            );
+
+            this.state.start('game1');
+        } // end of preload
+    </script>
+
+</body>
+
+</html>
