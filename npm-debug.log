@@ -1,0 +1,144 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'phaser@3.16.2ls' ]
+2 info using npm@3.10.10
+3 info using node@v6.17.1
+4 verbose config Skipping project config: /home/bcuser/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData phaser@3.16.2ls
+9 silly fetchNamedPackageData phaser
+10 silly mapToRegistry name phaser
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'phaser',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'phaser',
+13 silly mapToRegistry   name: 'phaser',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/phaser
+15 verbose request uri https://registry.npmjs.org/phaser
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 1:14:51 PM
+18 verbose request id 392b86e33ac385cc
+19 verbose etag W/"9df212be96cde9ad76a40ad65313ad7b"
+20 verbose lastModified Mon, 11 Feb 2019 10:00:15 GMT
+21 http request GET https://registry.npmjs.org/phaser
+22 http 304 https://registry.npmjs.org/phaser
+23 verbose headers { date: 'Wed, 01 May 2019 20:14:51 GMT',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'set-cookie': [ '__cfduid=d19b0029ee0385fe1239eaab8eefee9dd1556741691; expires=Thu, 30-Apr-20 20:14:51 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+23 verbose headers   'cf-cache-status': 'REVALIDATED',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'cf-ray': '4d046c967af9bcb4-SEA',
+23 verbose headers   etag: '"9df212be96cde9ad76a40ad65313ad7b"',
+23 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 verbose headers   'last-modified': 'Mon, 11 Feb 2019 10:00:15 GMT',
+23 verbose headers   vary: 'accept-encoding, accept',
+23 verbose headers   'x-amz-meta-rev': '161-e0d0228d99defede3c54be2193d91c36',
+23 verbose headers   server: 'cloudflare' }
+24 silly get cb [ 304,
+24 silly get   { date: 'Wed, 01 May 2019 20:14:51 GMT',
+24 silly get     connection: 'keep-alive',
+24 silly get     'set-cookie': [ '__cfduid=d19b0029ee0385fe1239eaab8eefee9dd1556741691; expires=Thu, 30-Apr-20 20:14:51 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+24 silly get     'cf-cache-status': 'REVALIDATED',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'cf-ray': '4d046c967af9bcb4-SEA',
+24 silly get     etag: '"9df212be96cde9ad76a40ad65313ad7b"',
+24 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+24 silly get     'last-modified': 'Mon, 11 Feb 2019 10:00:15 GMT',
+24 silly get     vary: 'accept-encoding, accept',
+24 silly get     'x-amz-meta-rev': '161-e0d0228d99defede3c54be2193d91c36',
+24 silly get     server: 'cloudflare' } ]
+25 verbose etag https://registry.npmjs.org/phaser from cache
+26 verbose get saving phaser to /home/bcuser/.npm/registry.npmjs.org/phaser/.cache.json
+27 verbose correctMkdir /home/bcuser/.npm correctMkdir not in flight; initializing
+28 silly fetchNamedPackageData No valid target from cache, forcing network
+29 verbose request uri https://registry.npmjs.org/phaser
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 1:14:52 PM
+32 http request GET https://registry.npmjs.org/phaser
+33 http 200 https://registry.npmjs.org/phaser
+34 verbose headers { date: 'Wed, 01 May 2019 20:14:52 GMT',
+34 verbose headers   'content-type': 'application/json',
+34 verbose headers   'transfer-encoding': 'chunked',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'set-cookie': [ '__cfduid=dbefe3a8b90c9245f6b76b44fa6b832691556741692; expires=Thu, 30-Apr-20 20:14:52 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+34 verbose headers   'cf-cache-status': 'HIT',
+34 verbose headers   'cache-control': 'max-age=300',
+34 verbose headers   'cf-ray': '4d046c976be8bcb4-SEA',
+34 verbose headers   etag: 'W/"9df212be96cde9ad76a40ad65313ad7b"',
+34 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+34 verbose headers   'last-modified': 'Mon, 11 Feb 2019 10:00:15 GMT',
+34 verbose headers   vary: 'accept-encoding, accept',
+34 verbose headers   'x-amz-meta-rev': '161-e0d0228d99defede3c54be2193d91c36',
+34 verbose headers   server: 'cloudflare',
+34 verbose headers   'content-encoding': 'gzip' }
+35 silly get cb [ 200,
+35 silly get   { date: 'Wed, 01 May 2019 20:14:52 GMT',
+35 silly get     'content-type': 'application/json',
+35 silly get     'transfer-encoding': 'chunked',
+35 silly get     connection: 'keep-alive',
+35 silly get     'set-cookie': [ '__cfduid=dbefe3a8b90c9245f6b76b44fa6b832691556741692; expires=Thu, 30-Apr-20 20:14:52 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+35 silly get     'cf-cache-status': 'HIT',
+35 silly get     'cache-control': 'max-age=300',
+35 silly get     'cf-ray': '4d046c976be8bcb4-SEA',
+35 silly get     etag: 'W/"9df212be96cde9ad76a40ad65313ad7b"',
+35 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+35 silly get     'last-modified': 'Mon, 11 Feb 2019 10:00:15 GMT',
+35 silly get     vary: 'accept-encoding, accept',
+35 silly get     'x-amz-meta-rev': '161-e0d0228d99defede3c54be2193d91c36',
+35 silly get     server: 'cloudflare',
+35 silly get     'content-encoding': 'gzip' } ]
+36 verbose get saving phaser to /home/bcuser/.npm/registry.npmjs.org/phaser/.cache.json
+37 verbose correctMkdir /home/bcuser/.npm correctMkdir not in flight; initializing
+38 silly fetchPackageMetaData Error: No compatible version found: phaser@3.16.2ls
+38 silly fetchPackageMetaData Valid install targets:
+38 silly fetchPackageMetaData 3.16.2, 3.16.1, 3.16.0-rc3, 3.16.0-rc2, 3.16.0-rc1, 3.15.1, 3.15.0, 3.14.0, 3.13.0, 3.12.0, 3.12.0-beta3, 3.12.0-beta2, 3.12.0-beta1, 3.11.0, 3.10.1, 3.10.0, 3.9.0, 3.8.0, 3.7.1, 3.7.0, 3.6.1, 3.6.0, 3.5.1, 3.5.0, 3.4.0, 3.3.0, 3.2.1, 3.2.0, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 3.0.0-beta.20, 3.0.0-beta.19, 3.0.0-beta.18, 3.0.0-beta.15, 3.0.0-beta.14, 3.0.0-beta.13, 3.0.0-beta.12, 3.0.0-beta.11, 3.0.0-beta.10, 3.0.0-beta.9, 3.0.0-beta.8, 3.0.0-beta.7, 3.0.0-beta.6, 3.0.0-beta.5, 3.0.0-beta.4, 3.0.0-beta.3, 3.0.0-beta.2, 3.0.0-beta.1, 3.0.0-alpha.2, 3.0.0-alpha, 2.6.2, 2.6.1, 2.6.0, 2.5.0, 2.4.9, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4, 2.4.3, 2.4.2, 2.4.1, 2.4.0, 2.4.0-a, 2.3.0, 2.2.2, 2.2.1, 2.2.0, 2.1.3, 2.1.2, 2.1.1, 2.1.0
+38 silly fetchPackageMetaData
+38 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+38 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+38 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+38 silly fetchPackageMetaData     at saved (/usr/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+38 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:241:18
+38 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+38 silly fetchPackageMetaData  error for phaser@3.16.2ls { Error: No compatible version found: phaser@3.16.2ls
+38 silly fetchPackageMetaData Valid install targets:
+38 silly fetchPackageMetaData 3.16.2, 3.16.1, 3.16.0-rc3, 3.16.0-rc2, 3.16.0-rc1, 3.15.1, 3.15.0, 3.14.0, 3.13.0, 3.12.0, 3.12.0-beta3, 3.12.0-beta2, 3.12.0-beta1, 3.11.0, 3.10.1, 3.10.0, 3.9.0, 3.8.0, 3.7.1, 3.7.0, 3.6.1, 3.6.0, 3.5.1, 3.5.0, 3.4.0, 3.3.0, 3.2.1, 3.2.0, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 3.0.0-beta.20, 3.0.0-beta.19, 3.0.0-beta.18, 3.0.0-beta.15, 3.0.0-beta.14, 3.0.0-beta.13, 3.0.0-beta.12, 3.0.0-beta.11, 3.0.0-beta.10, 3.0.0-beta.9, 3.0.0-beta.8, 3.0.0-beta.7, 3.0.0-beta.6, 3.0.0-beta.5, 3.0.0-beta.4, 3.0.0-beta.3, 3.0.0-beta.2, 3.0.0-beta.1, 3.0.0-alpha.2, 3.0.0-alpha, 2.6.2, 2.6.1, 2.6.0, 2.5.0, 2.4.9, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4, 2.4.3, 2.4.2, 2.4.1, 2.4.0, 2.4.0-a, 2.3.0, 2.2.2, 2.2.1, 2.2.0, 2.1.3, 2.1.2, 2.1.1, 2.1.0
+38 silly fetchPackageMetaData
+38 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+38 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+38 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+38 silly fetchPackageMetaData     at saved (/usr/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+38 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:241:18
+38 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15) code: 'ETARGET' }
+39 silly rollbackFailedOptional Starting
+40 silly rollbackFailedOptional Finishing
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: No compatible version found: phaser@3.16.2ls
+43 verbose stack Valid install targets:
+43 verbose stack 3.16.2, 3.16.1, 3.16.0-rc3, 3.16.0-rc2, 3.16.0-rc1, 3.15.1, 3.15.0, 3.14.0, 3.13.0, 3.12.0, 3.12.0-beta3, 3.12.0-beta2, 3.12.0-beta1, 3.11.0, 3.10.1, 3.10.0, 3.9.0, 3.8.0, 3.7.1, 3.7.0, 3.6.1, 3.6.0, 3.5.1, 3.5.0, 3.4.0, 3.3.0, 3.2.1, 3.2.0, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 3.0.0-beta.20, 3.0.0-beta.19, 3.0.0-beta.18, 3.0.0-beta.15, 3.0.0-beta.14, 3.0.0-beta.13, 3.0.0-beta.12, 3.0.0-beta.11, 3.0.0-beta.10, 3.0.0-beta.9, 3.0.0-beta.8, 3.0.0-beta.7, 3.0.0-beta.6, 3.0.0-beta.5, 3.0.0-beta.4, 3.0.0-beta.3, 3.0.0-beta.2, 3.0.0-beta.1, 3.0.0-alpha.2, 3.0.0-alpha, 2.6.2, 2.6.1, 2.6.0, 2.5.0, 2.4.9, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4, 2.4.3, 2.4.2, 2.4.1, 2.4.0, 2.4.0-a, 2.3.0, 2.2.2, 2.2.1, 2.2.0, 2.1.3, 2.1.2, 2.1.1, 2.1.0
+43 verbose stack
+43 verbose stack     at pickVersionFromRegistryDocument (/usr/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+43 verbose stack     at /usr/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+43 verbose stack     at /usr/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+43 verbose stack     at saved (/usr/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+43 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:241:18
+43 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+44 verbose cwd /home/bcuser/Game/PhaserDemo1
+45 error Linux 4.4.0-145-generic
+46 error argv "/usr/bin/node" "/usr/bin/npm" "install" "phaser@3.16.2ls"
+47 error node v6.17.1
+48 error npm  v3.10.10
+49 error code ETARGET
+50 error notarget No compatible version found: phaser@3.16.2ls
+50 error notarget Valid install targets:
+50 error notarget 3.16.2, 3.16.1, 3.16.0-rc3, 3.16.0-rc2, 3.16.0-rc1, 3.15.1, 3.15.0, 3.14.0, 3.13.0, 3.12.0, 3.12.0-beta3, 3.12.0-beta2, 3.12.0-beta1, 3.11.0, 3.10.1, 3.10.0, 3.9.0, 3.8.0, 3.7.1, 3.7.0, 3.6.1, 3.6.0, 3.5.1, 3.5.0, 3.4.0, 3.3.0, 3.2.1, 3.2.0, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 3.0.0-beta.20, 3.0.0-beta.19, 3.0.0-beta.18, 3.0.0-beta.15, 3.0.0-beta.14, 3.0.0-beta.13, 3.0.0-beta.12, 3.0.0-beta.11, 3.0.0-beta.10, 3.0.0-beta.9, 3.0.0-beta.8, 3.0.0-beta.7, 3.0.0-beta.6, 3.0.0-beta.5, 3.0.0-beta.4, 3.0.0-beta.3, 3.0.0-beta.2, 3.0.0-beta.1, 3.0.0-alpha.2, 3.0.0-alpha, 2.6.2, 2.6.1, 2.6.0, 2.5.0, 2.4.9, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4, 2.4.3, 2.4.2, 2.4.1, 2.4.0, 2.4.0-a, 2.3.0, 2.2.2, 2.2.1, 2.2.0, 2.1.3, 2.1.2, 2.1.1, 2.1.0
+51 error notarget This is most likely not a problem with npm itself.
+51 error notarget In most cases you or one of your dependencies are requesting
+51 error notarget a package version that doesn't exist.
+52 verbose exit [ 1, true ]

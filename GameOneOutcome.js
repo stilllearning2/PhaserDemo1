@@ -1,6 +1,9 @@
 GameName.GameOneOutcome = function () {
     this.finalScore;
-
+    var word = 'phaser';
+    var correct = [];
+    var bmd;
+    this.topPlayer;
 
 }
 
@@ -19,7 +22,9 @@ GameName.GameOneOutcome.prototype = {
         // sky
         this.add.image(400, 300, 'sky');
 
+        this.topPlayer = prompt("Please enter your last name");
+
         scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
-        scoreText.setText('Your Final Score was ' + this.finalScore);
+        scoreText.setText(this.topPlayer + '\'s Final Score was ' + this.finalScore);
     }
 }
